@@ -140,3 +140,18 @@ let n1 = 10,
   n5 = 50;
 let mean = mean5num(n1, n2, n3, n4, n5);
 console.log("\nMean of five numbers is : " + mean);
+
+//<----------#Strings---------->
+let me = "Abdullah Ibn Rafique";
+for (let ch of me) {
+  console.log(ch + " ");
+}
+console.log("length of my name is: " + me.length);
+
+//template literals
+console.log("\n Template Literals");
+let b1 = "Abdullah";
+let b2 = "Huraira";
+// ⬇️⬇️⬇️ this is called "string interpolation" ⬇️⬇️⬇️
+let friends = `${b1} is a friend of ${b2}`;
+console.log(friends);
