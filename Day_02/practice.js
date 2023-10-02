@@ -19,29 +19,63 @@
 // }
 
 //<----------#Array Methods---------->
-let num = [1, 2, 3, 4, 7, 8, 9];
-console.log(typeof num); //object
-let str = num.toString(); //this will convert
-console.log(typeof str); //string
-console.log(str);
+// let num = [1, 2, 3, 4, 7, 8, 9];
+// console.log(typeof num); //object
+// let str = num.toString(); //this will convert
+// console.log(typeof str); //string
+// console.log(str);
 
-//join method
-let c = num.join(" and "); //this will join the array elements with this separator
-console.log(c);
-console.log(typeof c); //string
+// //join method
+// let c = num.join(" and "); //this will join the array elements with this separator
+// console.log(c);
+// console.log(typeof c); //string
 
-//pop method: this will remove the last element of array and will change the same array not making a new array
-num.pop();
+// //pop method: this will remove the last element of array and will change the same array not making a new array
+// num.pop();
+// console.log(num);
+
+// //push method: modify kry ga existing array or push at the end
+// num.push(97);
+// console.log(num);
+
+// //shift method: remove first element and pop out this
+// num.shift();
+// console.log(num);
+
+// //add element at the beginning
+// num.unshift(56);
+// console.log(num);
+
+//some more arrays
+//delete operator: it will delete the element but the length of array will remain same
+let num = [11, 21, 13, 4, 56, 76, 7, 8, 9];
 console.log(num);
+// delete num[2];
+// console.log(num);
+// console.log(num.length); //it will remain same
 
-//push method: modify kry ga existing array or push at the end
-num.push(97);
-console.log(num);
+//concat array
+// let num2 = [11, 12, 13, 14, 15, 16, 17, 18, 19];
+// let mergedArr = num.concat(num2);
+// console.log(mergedArr);
 
-//shift method: remove first element and pop out this
-num.shift();
-console.log(num);
+// const compare = (a, b) => {
+//   return a - b; //sort ascendingly, if want desc write b-a;
+// };
 
-//add element at the beginning
-num.unshift(56);
-console.log(num);
+// //sort method it will sort alphabetically
+// console.log(num.sort(compare)); //11,13,21,4,56
+// //reverse method
+// console.log(num.reverse());
+
+//splice method: used to add new elements to the array and return removed elements
+//syntax: splice(starting index, remove_no_of_elements, new numbers separated by comma)
+// num.splice(2, 2, 1111, 2222, 3333, 4444);
+// console.log(num);
+//slice method: makes new array from existing
+let new_num = num.slice(2); //means index:2 -> end
+console.log(new_num);
+let newNum = num.slice(2, 5); //starting, ending indexes, last index is not included
+console.log(newNum);
+
+//<----------#Loops in Arrays---------->
