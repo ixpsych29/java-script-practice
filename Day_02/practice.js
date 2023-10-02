@@ -99,3 +99,6 @@ for (let n of num) {
 for (let idx in num) {
   console.log(idx);
 }
+
+//<----------#Array Very Useful Methods---------->
+//reduce,filter, etc.
