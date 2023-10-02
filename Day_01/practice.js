@@ -208,4 +208,10 @@ console.log(
 );
 //extract the amount of money
 let str = "please give rs 1000";
-console.log(str.slice("please give rs ".length));
+let amount = Number(str.slice("please give rs ".length));
+console.log(amount);
+console.log(typeof amount); //string -> number
+
+console.log(str.replace("a", "uuu"));
+str[3] = "rrrrr";
+console.log(str); //it doesn't work bcz string is immutable
