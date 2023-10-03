@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Water Gun Game</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+
+      button {
+        margin: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      #result {
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Snake Water Gun Game</h1>
+
+    <button onclick="playGame('snake')">Snake</button>
+    <button onclick="playGame('water')">Water</button>
+    <button onclick="playGame('gun')">Gun</button>
+
+    <div id="result"></div>
+
+    <script>
+      function playGame(userChoice) {
+        const choices = ["snake", "water", "gun"];
+        const computerChoice = choices[Math.floor(Math.random() * 3)];
+
+        const result = determineWinner(userChoice, computerChoice);
+
+        document.getElementById(
+          "result"
+        ).innerText = `You chose ${userChoice.toUpperCase()}, Computer chose ${computerChoice.toUpperCase()}. ${result}`;
+      }
+
+      function determineWinner(user, computer) {
+        if (user === computer) {
+          return "It's a tie!";
+        }
+
+        if (
+          (user === "snake" && computer === "water") ||
+          (user === "water" && computer === "gun") ||
+          (user === "gun" && computer === "snake")
+        ) {
+          return "You win!";
+        } else {
+          return "Computer wins!";
+        }
+      }
+    </script>
+  </body>
+</html>
