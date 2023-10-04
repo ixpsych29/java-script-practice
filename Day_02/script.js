@@ -24,5 +24,14 @@
 //   document.write("Please Allow me to write");
 // }
 
-window.console.log(window);
-console.log(document);
+// window.console.log(window);
+// console.log(document);
+
+//<----------#DOM Searching Elements---------->
+// document.getElementsByTagName("nav")[0].firstElementChild.style.color = "red";
+// document.getElementsByTagName("nav")[0].firstElementChild.style.color = "green";
+// document.getElementsByTagName("nav")[0].lastElementChild.style.color = "green";
+
+Array.from(document.getElementsByTagName("li")).forEach((element) => {
+  element.style.color = "cyan";
+});
