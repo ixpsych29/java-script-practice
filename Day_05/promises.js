@@ -88,22 +88,22 @@
 //<----------#---------->
 //promise API: 6 primary methods to use this
 
-let p1 = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve("value 1");
-  }, 1000);
-});
-let p2 = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    // resolve("value 1");
-    reject(new Error("Error Occurred"));
-  }, 2000);
-});
-let p3 = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve("value 3");
-  }, 3000);
-});
+// let p1 = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve("value 1");
+//   }, 1000);
+// });
+// let p2 = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     // resolve("value 1");
+//     reject(new Error("Error Occurred"));
+//   }, 2000);
+// });
+// let p3 = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve("value 3");
+//   }, 3000);
+// });
 
 // p1.then((val) => {
 //   console.log(val);
@@ -132,8 +132,8 @@ let p3 = new Promise((resolve, reject) => {
 // });
 
 //Promise.any(): similar to race but not give error and give actual value, if promise is not fullfilled
-let promise_all = Promise.any([p1, p2, p3]).then((val) => {
-  console.log(val);
-});
+// let promise_all = Promise.any([p1, p2, p3]).then((val) => {
+//   console.log(val);
+// });
 
 // Promise.resolve() && Promise.reject()
