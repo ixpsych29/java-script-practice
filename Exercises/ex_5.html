@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hack Program</title>
+    <style>
+      body {
+        background-color: black;
+        color: green;
+        font-family: "Courier New", monospace;
+        text-align: center;
+        margin: 20vh auto;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="output">Initializing Hack Program ...</p>
+
+    <script>
+      async function hackProgram() {
+        await displayOutput("Initializing Hack Program ...", 4500);
+        await displayOutput("Hacking Psych's username ...", 2000);
+        await displayOutput('Username found: "anti_venom_phakki" ...', 4000);
+        await displayOutput("Connecting to Instagram ...", 2300);
+        await displayOutput("Successfully connected...!🧑🏻‍💻", 1300);
+        await displayOutput("Ha Ha Ha Ha Ha Ha", 1300);
+      }
+
+      async function displayOutput(message, delay) {
+        document.getElementById("output").innerHTML = message;
+        await sleep(delay);
+      }
+
+      function sleep(ms) {
+        return new Promise((resolve) => setTimeout(resolve, ms));
+      }
+
+      hackProgram();
+    </script>
+  </body>
+</html>
