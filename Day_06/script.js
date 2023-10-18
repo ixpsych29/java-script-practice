@@ -77,7 +77,7 @@
 //it exist until a session has expired. on a single-tab, if opened the same tab on a new tab or exit it sessionStorage lost.
 
 //Storage event: it's used when we want to update the changes in the local storage everywhere.
-window.onstorage = (e) => {
-  console.log("change occurs");
-  console.log(e);
-};
+// window.onstorage = (e) => {
+//   console.log("change occurs");
+//   console.log(e);
+// };
