@@ -48,12 +48,12 @@
 //Cookies
 // let nameKey = prompt("name");
 // let val = prompt("value");
-// // document.cookie = `${nameKey}=${val}`;
-// //so inorder to add special characters in key or value we use encodeURIComponent && decodeURIComponent
+// document.cookie = `${nameKey}=${val}`;
+//so inorder to add special characters in key or value we use encodeURIComponent && decodeURIComponent
 // document.cookie = `${encodeURIComponent(nameKey)}=${encodeURIComponent(val)}`;
 // console.log(document.cookie);
-// //inorder to decode the above encoded special characters
-// // decodeURIComponent("pass the encoded letters");
+//inorder to decode the above encoded special characters
+// decodeURIComponent("pass the encoded letters");
 
 //localStorage
 // let key = prompt("enter key");
