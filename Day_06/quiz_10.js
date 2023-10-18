@@ -27,8 +27,8 @@
 // document.write(localStorage.getItem(ret_key));
 
 //Q5: delete the note that was fetched in Q3
-let c = confirm("Do you want to delete note?");
-if (c) {
-  let ret_key = prompt("then Enter key of note");
-  localStorage.removeItem(ret_key);
-}
+// let c = confirm("Do you want to delete note?");
+// if (c) {
+//   let ret_key = prompt("then Enter key of note");
+//   localStorage.removeItem(ret_key);
+// }
