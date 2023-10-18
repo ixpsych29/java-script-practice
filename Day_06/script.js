@@ -71,3 +71,7 @@ if (key == 0) {
 
 console.log(localStorage.length); ///find the length/size of localStorage
 console.log(localStorage.key(1)); //0=> index;
+
+//sessionStorage and related methods
+//having same methods as like localStorage
+//it exist until a session has expired. on a single-tab, if opened the same tab on a new tab or exit it sessionStorage lost.
