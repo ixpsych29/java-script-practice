@@ -56,22 +56,28 @@
 // // decodeURIComponent("pass the encoded letters");
 
 //localStorage
-let key = prompt("enter key");
-let val = prompt("enter value");
-localStorage.setItem(key, val); //set data to localStorage
-console.log(`The value at ${key} is ${localStorage.getItem(key)}`); //get data on the basis of key
+// let key = prompt("enter key");
+// let val = prompt("enter value");
+// localStorage.setItem(key, val); //set data to localStorage
+// console.log(`The value at ${key} is ${localStorage.getItem(key)}`); //get data on the basis of key
 
-if (key == "red") {
-  localStorage.removeItem(key); //remove that particular itemrizwan
-}
+// if (key == "red") {
+//   localStorage.removeItem(key); //remove that particular itemrizwan
+// }
 
-if (key == 0) {
-  localStorage.clear(); //will clear the localStorage
-}
+// if (key == 0) {
+//   localStorage.clear(); //will clear the localStorage
+// }
 
-console.log(localStorage.length); ///find the length/size of localStorage
-console.log(localStorage.key(1)); //0=> index;
+// console.log(localStorage.length); ///find the length/size of localStorage
+// console.log(localStorage.key(1)); //0=> index;
 
 //sessionStorage and related methods
 //having same methods as like localStorage
 //it exist until a session has expired. on a single-tab, if opened the same tab on a new tab or exit it sessionStorage lost.
+
+//Storage event: it's used when we want to update the changes in the local storage everywhere.
+window.onstorage = (e) => {
+  console.log("change occurs");
+  console.log(e);
+};
