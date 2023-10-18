@@ -7,7 +7,7 @@
 //   .then((res) => {
 //     console.log(res);
 //     for (let val in res) {
-//       //   console.log(response[res].name); //res: index; response[res=>index].prop_name
+//   console.log(response[res].name); //res: index; response[res=>index].prop_name
 //       console.log("api is working");
 //       document.write(
 //         `<b>Contest Name:</b> &nbsp; ${res[val].name},&nbsp; <b>URL:</b> &nbsp; ${res[val].url} &nbsp; && <b>SITE:</b>&nbsp; ${res[val].site} <br>`
@@ -27,6 +27,8 @@
 // document.write(localStorage.getItem(ret_key));
 
 //Q5: delete the note that was fetched in Q3
-
-let ret_key = prompt("Enter key of retrieval");
-localStorage.removeItem(ret_key);
+let c = confirm("Do you want to delete note?");
+if (c) {
+  let ret_key = prompt("then Enter key of note");
+  localStorage.removeItem(ret_key);
+}
