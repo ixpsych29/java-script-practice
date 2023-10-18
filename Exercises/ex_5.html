@@ -6,12 +6,14 @@
     <title>Hack Program</title>
     <style>
       body {
-        background-color: black;
-        color: green;
+        background-image: url("/Exercises/istockphoto-865457032-612x612.jpg");
+        background-size: cover;
+        color: rgb(238, 255, 0);
         font-family: "Courier New", monospace;
         text-align: center;
         margin: 20vh auto;
-        font-size: 24px;
+        font-size: 64px;
+        align-items: center;
       }
     </style>
   </head>
@@ -20,12 +22,15 @@
 
     <script>
       async function hackProgram() {
-        await displayOutput("Initializing Hack Program ...", 4500);
-        await displayOutput("Hacking Psych's username ...", 2000);
-        await displayOutput('Username found: "anti_venom_phakki" ...', 4000);
-        await displayOutput("Connecting to Instagram ...", 2300);
-        await displayOutput("Successfully connected...!🧑🏻‍💻", 1300);
-        await displayOutput("Ha Ha Ha Ha Ha Ha", 1300);
+        await displayOutput("<b>Initializing Hack Program ...</b>", 4.5);
+        await displayOutput("<b>Hacking Psych's username ...</b>", 2.0);
+        await displayOutput(
+          '<b>Username found: "anti_venom_phakki" ...</b>',
+          4.0
+        );
+        await displayOutput("<b>Connecting to Instagram ...</b>", 2.3);
+        await displayOutput("<b>Successfully connected...!🧑🏻‍💻</b>", 1.3);
+        await displayOutput("<b>Ha Ha Ha Ha Ha Ha</b>", 1.3);
       }
 
       async function displayOutput(message, delay) {
@@ -34,7 +39,7 @@
       }
 
       function sleep(ms) {
-        return new Promise((resolve) => setTimeout(resolve, ms));
+        return new Promise((resolve) => setTimeout(resolve, ms * 1000));
       }
 
       hackProgram();
