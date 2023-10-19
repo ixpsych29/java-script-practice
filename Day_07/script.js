@@ -109,3 +109,65 @@
 // // corolla.milage();
 
 /* *********** Method Overriding ************ */
+// class Employee {
+//   login() {
+//     console.log(`The Employee has logged in`);
+//   }
+//   logout() {
+//     console.log(`The Employee has logged out`);
+//   }
+//   requestLeaves(leaves) {
+//     console.log(`The employee request for ${leaves} leaves`);
+//   }
+// }
+
+// class Programmer extends Employee {
+//   reuqestCoffee(x) {
+//     console.log(`Employee has requested ${x} coffees`);
+//   }
+
+//   //here we are overriding the upper requestLeaves method with super()
+//   requestLeaves(leaves) {
+//     super.requestLeaves(leaves + 1); //the parent class method first runs and then below code runs
+//     console.log(
+//       `You will be granted ${leaves} leaves with an extra 1 leave also`
+//     );
+//   }
+// }
+
+// let emp = new Programmer();
+// emp.login();
+// emp.requestLeaves(10);
+// emp.logout();
+
+/* *********** Constructor Overriding ************ */
+class Employee {
+  login() {
+    console.log(`The Employee has logged in`);
+  }
+  logout() {
+    console.log(`The Employee has logged out`);
+  }
+  requestLeaves(leaves) {
+    console.log(`The employee request for ${leaves} leaves`);
+  }
+}
+
+class Programmer extends Employee {
+  reuqestCoffee(x) {
+    console.log(`Employee has requested ${x} coffees`);
+  }
+
+  //here we are overriding the upper requestLeaves method with super()
+  requestLeaves(leaves) {
+    super.requestLeaves(leaves + 1); //the parent class method first runs and then below code runs
+    console.log(
+      `You will be granted ${leaves} leaves with an extra 1 leave also`
+    );
+  }
+}
+
+let emp = new Programmer();
+emp.login();
+emp.requestLeaves(10);
+emp.logout();
