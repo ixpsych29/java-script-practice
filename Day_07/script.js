@@ -183,3 +183,20 @@
 // emp.logout();
 
 /* *********** Static Methods in JAVA ************ */
+class Animal {
+  constructor(name) {
+    this.name = Animal.capitalize(name); //static method are used with class.static_method()
+  }
+
+  walk() {
+    console.log(`Animal ${this.name} is walking`);
+  }
+
+  static capitalize(name) {
+    return name.charAt(0).toUpperCase() + name.substr(1, name.length);
+  }
+}
+
+let j = new Animal("janu");
+j.walk();
+// console.log(this.capitalize("shappar")); //this will not gonna work due to this
