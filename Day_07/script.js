@@ -200,3 +200,31 @@
 // let j = new Animal("janu");
 // j.walk();
 // console.log(this.capitalize("shappar")); //this will not gonna work due to this
+
+/* *********** Getter/Setters ************ */
+class Animal {
+  constructor(name) {
+    this._name = name;
+  }
+  fly() {
+    console.log(`${this._name} is flying`);
+  }
+  get name() {
+    return this._name;
+  }
+  set name(newName) {
+    this._name = newName;
+  }
+}
+
+let me = new Animal("Psych");
+me.fly();
+console.log(me.name);
+me.name = "Shapater";
+console.log(me.name);
+
+// /* *********** instanceof Operator ************ */
+// //this will used for checking an obj belongs to a class or not : true/false
+// console.log(me instanceof Animal); //true
+// let c = 89;
+// console.log(c instanceof Animal); //false
