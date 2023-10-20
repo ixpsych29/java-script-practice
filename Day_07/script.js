@@ -223,8 +223,8 @@ console.log(me.name);
 me.name = "Shapater";
 console.log(me.name);
 
-// /* *********** instanceof Operator ************ */
-// //this will used for checking an obj belongs to a class or not : true/false
-// console.log(me instanceof Animal); //true
-// let c = 89;
-// console.log(c instanceof Animal); //false
+/* *********** instanceof Operator ************ */
+//this will used for checking an obj belongs to a class or not : true/false
+console.log(me instanceof Animal); //true
+let c = 89;
+console.log(c instanceof Animal); //false
