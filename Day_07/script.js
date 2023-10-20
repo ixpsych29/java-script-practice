@@ -228,3 +228,5 @@
 // console.log(me instanceof Animal); //true
 // let c = 89;
 // console.log(c instanceof Animal); //false
+
+//Chapter 11 Ends!
