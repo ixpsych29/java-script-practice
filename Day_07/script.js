@@ -141,43 +141,45 @@
 // emp.logout();
 
 /* *********** Constructor Overriding ************ */
-class Employee {
-  constructor(name) {
-    console.log(`${name}'s constructor is here bruh!`); //this will called automatically if the child class object is created
-    this.name = name;
-  }
+// class Employee {
+//   constructor(name) {
+//     console.log(`${name}'s constructor is here bruh!`); //this will called automatically if the child class object is created
+//     this.name = name;
+//   }
 
-  login() {
-    console.log(`The Employee has logged in`);
-  }
-  logout() {
-    console.log(`The Employee has logged out`);
-  }
-  requestLeaves(leaves) {
-    console.log(`The employee request for ${leaves} leaves`);
-  }
-}
+//   login() {
+//     console.log(`The Employee has logged in`);
+//   }
+//   logout() {
+//     console.log(`The Employee has logged out`);
+//   }
+//   requestLeaves(leaves) {
+//     console.log(`The employee request for ${leaves} leaves`);
+//   }
+// }
 
-class Programmer extends Employee {
-  //if there's no constructor in child class then it'll created by javascript engine and called with super() keyword
-  /* constructor(...args){
-    super(...args);
-  } */
+// class Programmer extends Employee {
+//   //if there's no constructor in child class then it'll created by javascript engine and called with super() keyword
+//   /* constructor(...args){
+//     super(...args);
+//   } */
 
-  reuqestCoffee(x) {
-    console.log(`Employee has requested ${x} coffees`);
-  }
+//   reuqestCoffee(x) {
+//     console.log(`Employee has requested ${x} coffees`);
+//   }
 
-  //here we are overriding the upper requestLeaves method with super()
-  requestLeaves(leaves) {
-    super.requestLeaves(leaves); //the parent class method first runs and then below code runs
-    console.log(
-      `You will be granted ${leaves + 1} leaves with an extra 1 leave also`
-    );
-  }
-}
+//   //here we are overriding the upper requestLeaves method with super()
+//   requestLeaves(leaves) {
+//     super.requestLeaves(leaves); //the parent class method first runs and then below code runs
+//     console.log(
+//       `You will be granted ${leaves + 1} leaves with an extra 1 leave also`
+//     );
+//   }
+// }
 
-let emp = new Programmer("Muhammad Abdullah Ibn Rafique");
-emp.login();
-emp.requestLeaves(10);
-emp.logout();
+// let emp = new Programmer("Muhammad Abdullah Ibn Rafique");
+// emp.login();
+// emp.requestLeaves(10);
+// emp.logout();
+
+/* *********** Static Methods in JAVA ************ */
