@@ -59,21 +59,22 @@ class complexNo {
     this.img = img;
     // console.log(`Complex number is ${real}+${img}i`);
   }
-  getReal() {
-    return this.real;
+  get real() {
+    return this._real;
   }
-  getImg() {
-    return this.img;
+  get img() {
+    return this._img;
   }
-  setReal(real) {
-    this.real = real;
+  set real(newReal) {
+    this._real = newReal;
   }
-  setImg(img) {
-    this.img = img;
+  set img(newImg) {
+    this._img = newImg;
   }
 }
 
 let a = new complexNo(2, 4);
+a.real = 7;
+a.img = 7;
 let b = new complexNo(7, 11);
-console.log("real: " + a.getReal() + " & img: " + a.getImg());
-console.log("real: " + b.getReal() + " & img: " + b.getImg());
+console.log(`real: ${a.real} && img: ${a.img}i`);
