@@ -53,28 +53,28 @@
 // console.log(st instanceof Human);   //true
 
 //Q5: Use getters and setters to set and get the real and imaginary parts of the complex numbers.
-class complexNo {
-  constructor(real, img) {
-    this.real = real;
-    this.img = img;
-    // console.log(`Complex number is ${real}+${img}i`);
-  }
-  get real() {
-    return this._real;
-  }
-  get img() {
-    return this._img;
-  }
-  set real(newReal) {
-    this._real = newReal;
-  }
-  set img(newImg) {
-    this._img = newImg;
-  }
-}
+// class complexNo {
+//   constructor(real, img) {
+//     this.real = real;
+//     this.img = img;
+//     // console.log(`Complex number is ${real}+${img}i`);
+//   }
+//   get real() {
+//     return this._real;
+//   }
+//   get img() {
+//     return this._img;
+//   }
+//   set real(newReal) {
+//     this._real = newReal;
+//   }
+//   set img(newImg) {
+//     this._img = newImg;
+//   }
+// }
 
-let a = new complexNo(2, 4);
-a.real = 7;
-a.img = 7;
-let b = new complexNo(7, 11);
-console.log(`real: ${a.real} && img: ${a.img}i`);
+// let a = new complexNo(2, 4);
+// a.real = 7;
+// a.img = 7;
+// let b = new complexNo(7, 11);
+// console.log(`real: ${a.real} && img: ${a.img}i`);
