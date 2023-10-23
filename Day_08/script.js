@@ -29,6 +29,6 @@
 // console.log(a, c, rest); //a=1, c=3, rest=[4,5,6,7].
 
 //spread Operator
-let spread = [1, 2, 3, 4, 5, 6, 7];
-let s2 = { ...spread };
-console.log(s2);
+// let spread = [1, 2, 3, 4, 5, 6, 7];
+// let s2 = { ...spread };
+// console.log(s2);
