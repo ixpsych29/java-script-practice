@@ -19,3 +19,16 @@
 // })();
 
 /* *********** Destructuring && Spread Operator ************ */
+//Destructuring
+// let arr = [1, 2, 3, 4, 5, 6, 7];
+// let [a, b, ...rest] = arr;
+// console.log(a, b, rest);
+//if we don't want  to assign any variable to 2nd value of array we left it empty and just write comma.
+// let arr = [1, 2, 3, 4, 5, 6, 7];
+// let [a, , c, ...rest] = arr;
+// console.log(a, c, rest); //a=1, c=3, rest=[4,5,6,7].
+
+//spread Operator
+let spread = [1, 2, 3, 4, 5, 6, 7];
+let s2 = { ...spread };
+console.log(s2);
