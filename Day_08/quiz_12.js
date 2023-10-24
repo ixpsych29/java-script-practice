@@ -28,20 +28,20 @@
 // console.log(avg(...numArr));
 
 //Q3:
-const res = (n) => {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve("Promise resolved after " + n + " seconds");
-    }, n * 1000);
-  });
-};
-(async () => {
-  let result = await res(3);
-  console.log(result);
-  result = await res(5);
-  console.log(result);
-  result = await res(7);
-  console.log(result);
-  result = await res(9);
-  console.log(result);
-})();
+// const res = (n) => {
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       resolve("Promise resolved after " + n + " seconds");
+//     }, n * 1000);
+//   });
+// };
+// (async () => {
+//   let result = await res(3);
+//   console.log(result);
+//   result = await res(5);
+//   console.log(result);
+//   result = await res(7);
+//   console.log(result);
+//   result = await res(9);
+//   console.log(result);
+// })();
