@@ -36,3 +36,36 @@
 /* *********** Scope ************ */
 //3 types of scopes available in JS.
 //1. Global Scope: accessible everywhere. 2. Local Scope: inside the body of function or block 3. Block Scope
+
+/* *********** Hoisting ************ */
+// //only all decalarations are hoisted to the top of the file but not the intializations. hum jahan bhi variable declare karenge wo file ke top pe chale jayenge.
+
+// greet();
+// //calling functions before decalaration is possible in JS due to hoisting.
+// function greet() {
+//   console.log("Hello World");
+// }
+// //hoisting only works with function declaration not with function expression.
+// //hositing will give error with let or const;
+
+/* *********** Closures ************ */
+function returnFunc() {
+  const x = () => {
+    let a = 1;
+    console.log(a);
+    const y = () => {
+      // let a = 2
+      console.log(a);
+      const z = () => {
+        // let a = 3
+        console.log(a);
+      };
+      z();
+    };
+    a = 999;
+    y();
+  };
+  return x;
+}
+let a = returnFunc();
+a();
