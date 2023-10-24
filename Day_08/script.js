@@ -72,19 +72,19 @@
 // a();
 
 /* *********** arrow function revisited ************ */
-const person = {
-  name: "psych",
-  role: "Junior JS Developer",
-  experience: "Fresher",
-  show: function () {
-    console.log("Output will be in 2 seconds");
-    setTimeout(() => {
-      console.log(
-        `My name is ${this.name} and I am a ${this.role} at the age of ${this.age} with ${this.experience} experience.`
-      );
-    }, 2000);
-  },
-  age: 22,
-};
+// const person = {
+//   name: "psych",
+//   role: "Junior JS Developer",
+//   experience: "Fresher",
+//   show: function () {
+//     console.log("Output will be in 2 seconds");
+//     setTimeout(() => {
+//       console.log(
+//         `My name is ${this.name} and I am a ${this.role} at the age of ${this.age} with ${this.experience} experience.`
+//       );
+//     }, 2000);
+//   },
+//   age: 22,
+// };
 
-person.show();
+// person.show();
