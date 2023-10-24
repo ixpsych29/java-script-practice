@@ -51,3 +51,21 @@
 // let emp1 = new employee("Abdullah Ibn Rafique", 22);
 // //calling method
 // emp1.run();
+
+/* *********** Objects ************ */
+const person = {
+  name: "psych",
+  role: "Junior JS Developer",
+  experience: "Fresher",
+  show: function () {
+    console.log(this);
+    setTimeout(() => {
+      console.log(
+        `My name is ${this.name} and I am a ${this.role} at the age of ${this.age} with ${this.experience} experience.`
+      );
+    }, 2000);
+  },
+  age: 22,
+};
+
+person.show();

@@ -49,23 +49,42 @@
 // //hositing will give error with let or const;
 
 /* *********** Closures ************ */
-function returnFunc() {
-  const x = () => {
-    let a = 1;
-    console.log(a);
-    const y = () => {
-      // let a = 2
-      console.log(a);
-      const z = () => {
-        // let a = 3
-        console.log(a);
-      };
-      z();
-    };
-    a = 999;
-    y();
-  };
-  return x;
-}
-let a = returnFunc();
-a();
+//having access to outer function scope from inner function even after the outer function has returned.
+// function returnFunc() {
+//   const x = () => {
+//     let a = 1;
+//     console.log(a);
+//     const y = () => {
+//       // let a = 2
+//       console.log(a);
+//       const z = () => {
+//         // let a = 3
+//         console.log(a);
+//       };
+//       z();
+//     };
+//     a = 999;
+//     y();
+//   };
+//   return x;
+// }
+// let a = returnFunc();
+// a();
+
+/* *********** arrow function revisited ************ */
+const person = {
+  name: "psych",
+  role: "Junior JS Developer",
+  experience: "Fresher",
+  show: function () {
+    console.log("Output will be in 2 seconds");
+    setTimeout(() => {
+      console.log(
+        `My name is ${this.name} and I am a ${this.role} at the age of ${this.age} with ${this.experience} experience.`
+      );
+    }, 2000);
+  },
+  age: 22,
+};
+
+person.show();
