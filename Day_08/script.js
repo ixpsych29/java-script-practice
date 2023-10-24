@@ -32,3 +32,7 @@
 // let spread = [1, 2, 3, 4, 5, 6, 7];
 // let s2 = { ...spread };
 // console.log(s2);
+
+/* *********** Scope ************ */
+//3 types of scopes available in JS.
+//1. Global Scope: accessible everywhere. 2. Local Scope: inside the body of function or block 3. Block Scope
