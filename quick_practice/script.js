@@ -132,3 +132,5 @@ async function handlePromise() {
 handlePromise();
 //another way to handle errors
 // handlePromise().catch((err) => console.log(err));
+
+//async/await works in the same way as .then() and .catch() works.it's just a syntactic sugar. its more readable and easy to understand.
