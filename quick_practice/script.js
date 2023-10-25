@@ -115,3 +115,20 @@
 // }
 // handlePromise();
 // console.log("after calling async function");
+
+//using fetch
+const API_URL = "https://api.github.com/users/ixpsych291";
+async function handlePromise() {
+  try {
+    const data = await fetch(API_URL); //fetch will give us a promise which is response
+    const jsonVal = await data.json(); //json() will give us a promise which is data
+    console.log(jsonVal);
+  } catch (err) {
+    console.log(err);
+  }
+}
+//how to handle error in async await: using try catch block
+
+handlePromise();
+//another way to handle errors
+// handlePromise().catch((err) => console.log(err));
