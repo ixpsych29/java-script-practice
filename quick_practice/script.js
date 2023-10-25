@@ -53,19 +53,65 @@
 // emp1.run();
 
 /* *********** Objects ************ */
-const person = {
-  name: "psych",
-  role: "Junior JS Developer",
-  experience: "Fresher",
-  show: function () {
-    console.log(this);
-    setTimeout(() => {
-      console.log(
-        `My name is ${this.name} and I am a ${this.role} at the age of ${this.age} with ${this.experience} experience.`
-      );
-    }, 2000);
-  },
-  age: 22,
-};
+// const person = {
+//   "person name": "psych",
+//   role: "Junior JS Developer",
+//   experience: "Fresher",
+//   show: function () {
+//     console.log(this);
+//     setTimeout(() => {
+//       console.log(
+//         `My name is ${this.name} and I am a ${this.role} at the age of ${this.age} with ${this.experience} experience.`
+//       );
+//     });
+//   },
+//   age: 22,
+// };
 
-person.show();
+// person.show();
+
+// setTimeout(() => {
+//   console.log("Salman Bhai");
+// }, 0);
+// console.log("after setTimeout");
+
+// let a = 10;
+// let b = a; //10
+// a = 20;
+// console.log(a, b);
+
+// let arr1 = [1, 2, 3, 4, 5];
+// let arr2 = arr1;
+// arr1.push(6);
+// console.log(arr1, arr2);
+
+// let pName = "Abdullah Ibn Rafique";
+// pName[0] = "b";
+// console.log(pName);
+
+// var a = 10;
+
+// function printVal() {
+//   var a = 20;
+//   // console.log(a);
+// }
+// printVal();
+// console.log(a);
+
+// let arr = ["Abdullah", 22, "JS Developer"];
+// let [name, ...rest] = arr;
+// console.log(name, rest);
+
+/* *********** ASYNC AWAIT ************ */
+// let p = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve("Promise has been fulfilled");
+//   }, 0);
+// });
+
+// async function handlePromise() {
+//   const val = await p;
+//   console.log(val);
+// }
+// handlePromise();
+// console.log("after calling async function");
